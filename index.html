@@ -8,66 +8,75 @@
 	<title>Portfolio</title>
 </head>
 <body>
-  <div class="info_container">
-    <img class="info_container--avatar" src="assets/Images/Avatar.JPG" alt="avatar">
-		<ul class="info_container--socials_list">
-    	<h1 class="info_container--name">Ilya Androsov</h1>
-			<li class="info_container--socials_list-item"><a href="https://github.com/Ajololr?tab=repositories">GitHub</a></li>
-			<li class="info_container--socials_list-item"><a href="https://vk.com/andrik0099">Vk</a></li>
-		</ul>
-	</div>
-	<div class="education_container">
-    <div class="education_container--logo">
-      <span>Education</span>
-      <span>&or;</span>
-    </div>
-    <div class="education_container--list">
-      <ul>
-        <li>
-          <h3>School</h3>
-          <h4>2007 - 2018</h4>
-        </li>
-        <li>
-          <h3>University</h3>
-          <h4>2018</h4>
-        </li>
-        <li>
-          <h3>RSSchool Courses</h3>
-          <h4>2019</h4>
-        </li>
+  <iframe class="first-project" src="Projects/theyalow/index.html"></iframe>
+  <iframe class="second-project" src="Projects/repair-design-project/index.html"></iframe>
+  <div class="wrapper">
+    <div class="info_container">
+      <img class="info_container--avatar" src="assets/Images/Avatar.JPG" alt="avatar">
+      <ul class="info_container--socials_list">
+        <h1 class="info_container--name">Ilya Androsov</h1>
+        <li class="info_container--socials_list-item"><a href="https://github.com/Ajololr?tab=repositories">GitHub</a></li>
+        <li class="info_container--socials_list-item"><a href="https://vk.com/andrik0099">Vk</a></li>
       </ul>
     </div>
-  <div class="projects_container">
-    <h2 class="projects_container--logo">Projects</h2>
-    <div class="carousel">
-      <div class="control left">
-          <div class="arrow left">&lt;</div>
+    <div class="education_container">
+      <div class="education_container--logo">
+        <span>Education</span>
+        <span>&or;</span>
       </div>
-      <div class="items-container">
-        <div class="item active">
-          <div class="description">
-            <div class="project-name">
-              <h3>Theyalow</h3>
-              <h4>Click on image to see the project</h4>
+      <div class="education_container--list">
+        <ul>
+          <li>
+            <h3>School</h3>
+            <h4>2007 - 2018</h4>
+          </li>
+          <li>
+            <h3>University</h3>
+            <h4>2018</h4>
+          </li>
+          <li>
+            <h3>RSSchool Courses</h3>
+            <h4>2019</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="projects_container">
+      <h2 class="projects_container--logo">Projects</h2>
+      <div class="carousel">
+        <div class="control left">
+            <div class="arrow left">&lt;</div>
+        </div>
+        <div class="items-container">
+          <div class="item active">
+            <div class="description">
+              <div class="project-name">
+                <h3>Theyalow</h3>
+                <h4>Click on image to see the project</h4>
+              </div>
+                <img class="first-project-image" src="assets/Images/First.png" alt="project">
             </div>
-            <img class="project-image" src="assets/Images/First.png" alt="project">
+          </div>
+          <div class="item">
+            <div class="description">
+              <div class="project-name">
+                <h3>Repair-design-project</h3>
+                <h4>Click on image to see the project</h4>
+              </div>
+              <img class="second-project-image" src="assets/Images/Second.png" alt="project">
+            </div>
           </div>
         </div>
-        <div class="item">
-          <div class="description">
-            <div class="project-name">
-              <h3>Repair-design-project</h3>
-              <h4>Click on image to see the project</h4>
-            </div>
-            <img class="project-image" src="assets/Images/Second.png" alt="project">
-          </div>
+        <div class="control right">
+          <div class="arrow right">&gt;</div>
         </div>
-      </div>
-      <div class="control right">
-        <div class="arrow right">&gt;</div>
       </div>
     </div>
   </div>
-	<script src="index.js"></script>
+  <div class="buttons-container">
+    <button class="change-view-btn">Mobile</button>
+    <button class="back-btn">Back</button>
+  </div>
+  <script src="index.js"></script>
 </body> 
 </html>

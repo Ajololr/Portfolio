@@ -147,3 +147,40 @@ document.querySelector('.education_container--logo').addEventListener('click', f
 		isShown = true;
 	};
 }) 
+
+let isDesktop = true;
+
+document.querySelector('.change-view-btn').addEventListener('click', function(element) {
+  if (isDesktop) {
+		document.querySelector('.first-project').style.width = '640px';
+		document.querySelector('.second-project').style.width = '375px';
+    document.querySelector('.change-view-btn').innerHTML = 'Desktop';
+  } else {
+		document.querySelector('.first-project').style.width = '100%';
+		document.querySelector('.second-project').style.width = '100%';
+    document.querySelector('.change-view-btn').innerHTML = 'Mobile';
+  }
+    isDesktop = !isDesktop;
+})
+
+document.querySelector('.back-btn').addEventListener('click', function(element) {
+	let event = new Event("click");
+  document.querySelector('.change-view-btn').dispatchEvent(event);
+	document.querySelector('.change-view-btn').click;
+	document.querySelector('.first-project').style.display = 'none';
+	document.querySelector('.second-project').style.display = 'none';
+	document.querySelector('.wrapper').style.display = 'block';
+	document.querySelector('.buttons-container').style.display = 'none';
+})
+
+document.querySelector('.first-project-image').addEventListener('click', function(element) {
+	document.querySelector('.first-project').style.display = 'block';
+	document.querySelector('.wrapper').style.display = 'none';
+	document.querySelector('.buttons-container').style.display = 'flex';
+})
+
+document.querySelector('.second-project-image').addEventListener('click', function(element) {
+	document.querySelector('.second-project').style.display = 'block';
+	document.querySelector('.wrapper').style.display = 'none';
+	document.querySelector('.buttons-container').style.display = 'flex';
+})

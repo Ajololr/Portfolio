@@ -1,8 +1,31 @@
 body {
   width: 100%;
+  margin: 0 0 0 0;
+}
+
+.wrapper {
+  width: 100%;
   max-width: 1020px;
   margin: 0 auto;
   box-shadow: 0px 0px 20px 0px;
+}
+
+.buttons-container {
+  position: fixed;
+  top: 60%;
+  left: 75%;
+  display: none;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.back-btn, 
+.change-view-btn {
+  width: 130px;
+  height: 65px;
+  font-size: 25px;
+  margin-top: 30px;
+  border-radius: 5px;
 }
 
 .info_container {
@@ -131,7 +154,18 @@ body {
 }
 
 img {
-	width: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.first-project,
+.second-project {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  border: none;
 }
 
 @keyframes left {
